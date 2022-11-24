@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="country"
+        type="com.example.countryapphilt.model.DataList" />
+</data>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailFragment">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/detailCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@{country.name.official.toString()}"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/countryCapital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{country.capital.get(0).toString()}"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{country.region.toString()}"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countrySubRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{country.subregion.toString()}"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{country.population.toString()}"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+        <TextView
+            android:id="@+id/countryLatiLongi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country LatidududeLongitude"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryCapitalLatiLongi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country Capital LatidudeLongitude"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryTimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{country.timezones.toString()}"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Ara:`+ country.translations.ara.official}" />
+
+                <TextView
+                    android:id="@+id/bre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Bre:`+ country.translations.bre.official}" />
+
+                <TextView
+                    android:id="@+id/ces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Ces:`+ country.translations.ces.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/cym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Cym:`+ country.translations.cym.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/deu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Deu:`+ country.translations.deu.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/est"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Est:`+ country.translations.est.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/fin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Fin:`+ country.translations.fin.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/fra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Fra:`+ country.translations.fra.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/hrv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Hrv:`+ country.translations.hrv.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/hun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Hun:`+ country.translations.hun.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/ita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Ita:`+ country.translations.ita.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/jpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Jpn:`+ country.translations.jpn.official}"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/kor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Kor:`+ country.translations.kor.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/nld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Nld:`+ country.translations.nld.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Per:`+ country.translations.per.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/pol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Pol:`+ country.translations.pol.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/por"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Por:`+ country.translations.por.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/rus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Rus:`+ country.translations.rus.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/slk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Slk:`+ country.translations.slk.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Spa:`+ country.translations.spa.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/swe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Swe:`+ country.translations.swe.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/Tur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Tur:`+ country.translations.tur.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/urd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Urd:`+ country.translations.urd.official}"></TextView>
+
+                <TextView
+                    android:id="@+id/zho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`Zho:`+ country.translations.zho.official}"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+</layout>

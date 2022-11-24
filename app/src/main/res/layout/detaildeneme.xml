@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailFragment">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/detailCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Country Name"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/countryCapital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country Capital"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country Region"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countrySubRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country SubRegion"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country Language"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+        <TextView
+            android:id="@+id/countryLatiLongi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country LatidududeLongitude"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryCapitalLatiLongi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country Capital LatidudeLongitude"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/countryTimeZone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country TimeZone"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ara"></TextView>
+
+                <TextView
+                    android:id="@+id/bre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bre"></TextView>
+
+                <TextView
+                    android:id="@+id/ces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ces"></TextView>
+
+                <TextView
+                    android:id="@+id/cym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cym"></TextView>
+
+                <TextView
+                    android:id="@+id/deu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="deu"></TextView>
+
+                <TextView
+                    android:id="@+id/est"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="est"></TextView>
+
+                <TextView
+                    android:id="@+id/fin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fin"></TextView>
+
+                <TextView
+                    android:id="@+id/fra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fra"></TextView>
+
+                <TextView
+                    android:id="@+id/hrv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hrv"></TextView>
+
+                <TextView
+                    android:id="@+id/hun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hun"></TextView>
+
+                <TextView
+                    android:id="@+id/ita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ita"></TextView>
+
+                <TextView
+                    android:id="@+id/jpn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jpn"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/kor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kor"></TextView>
+
+                <TextView
+                    android:id="@+id/nld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nld"></TextView>
+
+                <TextView
+                    android:id="@+id/per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="per"></TextView>
+
+                <TextView
+                    android:id="@+id/pol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pol"></TextView>
+
+                <TextView
+                    android:id="@+id/por"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="por"></TextView>
+
+                <TextView
+                    android:id="@+id/rus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rus"></TextView>
+
+                <TextView
+                    android:id="@+id/slk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="slk"></TextView>
+
+                <TextView
+                    android:id="@+id/spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="spa"></TextView>
+
+                <TextView
+                    android:id="@+id/swe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="swe"></TextView>
+
+                <TextView
+                    android:id="@+id/Tur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tur"></TextView>
+
+                <TextView
+                    android:id="@+id/urd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="urd"></TextView>
+
+                <TextView
+                    android:id="@+id/zho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="zho"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
